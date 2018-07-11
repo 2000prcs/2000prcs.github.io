@@ -295,7 +295,11 @@
 					$('<div class="close">Close</div>')
 						.appendTo($this)
 						.on('click', function() {
-							location.hash = '';
+              location.hash = '';
+              if($('#gform').css('display') === 'none'){
+                $('#gform').removeAttr('style');
+                $('#thankyou_message').css('display', 'none');
+              }
 						});
 
 				// Prevent clicks from inside article from bubbling.
@@ -303,14 +307,18 @@
 						event.stopPropagation();
 					});
 
-			});
+      });
 
 		// Events.
 			$body.on('click', function(event) {
 
 				// Article visible? Hide.
 					if ($body.hasClass('is-article-visible'))
-						$main._hide(true);
+            $main._hide(true);
+            if($('#gform').css('display') === 'none'){
+              $('#gform').removeAttr('style');
+              $('#thankyou_message').css('display', 'none');
+            }
 
 			});
 

@@ -67,22 +67,34 @@ while (isCodingFun()) {
 							</article>
 
 						<!-- Work -->
-							<article id="work" style="display:flex;width:100vw">
+							<article id="work">
                 <div class="work paragraph" style="margin-right:5px">
                     <h2 class="major">Dear My Cat</h2>
-                    <span class="image main"><a href="https://github.com/2000prcs/Dear-My-Cat" target="_blank"><img height="300px" src="https://media.giphy.com/media/TgFicp2dGnznFKkKie/giphy.gif" alt="" /></a></span>
-                    <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+                    <span class="image main"><a href="https://github.com/2000prcs/Dear-My-Cat" target="_blank"><img height="300px" style="margin-left:auto;margin-right:auto;width:200px" src="https://media.giphy.com/media/TgFicp2dGnznFKkKie/giphy.gif" alt="" /></a></span>
+                    <blockquote>React Native, Redux, React Router</blockquote>
+                    <p><strong>Mobile simulation game built with React Native.</strong> The gameplay is 'Dating with your ideal type of cat'. 
+                      Users can choose an ideal type of cat and then spend time with the cat until they see their own ending.
+                      You can be 'Nyanmates' with your cat, or something bad might happen..?!
+                    </p>
                 </div>
                 <div class="work paragraph" style="margin-left:5px; margin-right:5px">
                     <h2 class="major">SkyLodge</h2>
                     <span class="image main"><a href="https://github.com/skylodge/booking-service" target="_blank"><img height="300px" src="images/project2.gif" alt="" /></a></span>
-                    <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
-                </div>
+                    <blockquote>React, CSS Module, Node.js, MongoDB, Redis, Docker, AWS EC2</blockquote>
+                    <p><strong>Web application which allows users to book accommodations.</strong> 
+                    I was responsible for a booking module which gets booking information from users and send it to the express server. 
+                    Users can send check-in/check-out dates through the calendar and send guest numbers. 
+                    </p>
+                  </div>
                 <div class="work paragraph" style="margin-left:5px">
                     <h2 class="major">QuickStarter</h2>
                     <span class="image main"><a href="https://github.com/quickstarter/campaign-module" target="_blank"><img height="300px" src="https://media.giphy.com/media/9x1gTrNEeF2PQoAs3d/giphy.gif" alt="" /></a></span>
-                    <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
-                </div>
+                    <blockquote>React, SASS, Node.js, PostgreSql, Redis, Docker, AWS EC2/RDS/ELB</blockquote>
+                    <p><strong>Crowdfunding app which allows users to make pledges for prototype products.</strong> 
+                    I was focused more on the backend. I was responsible for its campaign module which shows different price levels of the pledges. 
+                    Originally the module had 100 entries in Mongo. But I generated 300M entries to conduct stress testing with a realistic scenario and switched the database to Postgres for the relational schema. 
+                    </p>
+                  </div>
               </article>
 
 
@@ -96,26 +108,30 @@ while (isCodingFun()) {
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
+								<form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbx1osEtKk9-B4xYfXP4narf-6c9XZ_snxJJmPUaAg/exec">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
+											<input type="text" name="name" id="name" placeholder="Mo Lee"/>
 										</div>
 										<div class="field half">
 											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
+											<input type="text" name="email" id="email" placeholder="mo@catlover.net"/>
 										</div>
 										<div class="field">
 											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
+											<textarea name="message" id="message" rows="4" placeholder="Enter your message"></textarea>
+                    </div>
 									</div>
 									<ul class="actions">
 										<li><input type="submit" value="Send Message" class="primary" /></li>
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
-								</form>
+                </form>
+                <div style="display:none;" id="thankyou_message">
+                  <h3><b>Thanks</b> for contacting me!</br>
+                  I will get back to you soon! :)</h3>
+                </div>
                 <ul class="icons">
                     <!-- <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li> -->
                     <li><a href="https://github.com/2000prcs" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
@@ -391,7 +407,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+      <script src="assets/js/main.js"></script>
+      <script data-cfasync="false" type="text/javascript" src="assets/js/form-submission-handler.js"></script>
 
 	</body>
 </html>
