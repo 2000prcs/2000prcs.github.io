@@ -1,0 +1,19 @@
+{
+  "name": "homepage",
+  "version": "1.0.0",
+  "description": "homepage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2000prcs/2000prcs.github.io.git"
+  },
+  "author": "Moyeong Lee(2000prcs@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/2000prcs/2000prcs.github.io/issues"
+  },
+  "homepage": "https://www.moyeong.com"
+}
