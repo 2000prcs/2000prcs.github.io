@@ -80,8 +80,8 @@ while (isCodingFun()) {
                 <div class="work paragraph" style="margin-left:5px; margin-right:5px">
                     <h2 class="major">SkyLodge</h2>
                     <span class="image main"><a href="https://github.com/skylodge/booking-service" target="_blank"><img height="300px" src="images/project2.gif" alt="" /></a></span>
-                    <blockquote>React, CSS Module, Node.js, MongoDB, Redis, Docker, AWS EC2</blockquote>
-                    <p><strong>Web application which allows users to book accommodations.</strong> 
+                    <blockquote>React, CSS Module, Node.js, MongoDB, Redis, Docker, AWS S3/EC2, Jest/Enzyme, Travis CI</blockquote>
+                    <p><strong>Web application for booking accommodations.</strong> 
                     My focus was on its booking module's responsive design & user exprience.
                     The module gets user information such as check-in/out dates and guest numbers, and sends it to the express server for processing. 
                     </p>
@@ -89,11 +89,12 @@ while (isCodingFun()) {
                 <div class="work paragraph" style="margin-left:5px">
                     <h2 class="major">QuickStarter</h2>
                     <span class="image main"><a href="https://github.com/quickstarter/campaign-module" target="_blank"><img height="300px" src="https://media.giphy.com/media/9x1gTrNEeF2PQoAs3d/giphy.gif" alt="" /></a></span>
-                    <blockquote>React, SASS, Node.js, PostgreSql, Redis, Docker, AWS EC2/RDS/ELB</blockquote>
+                    <blockquote>React, SASS, Node.js, PostgreSql, Redis, Docker, AWS S3/EC2/RDS/ELB</blockquote>
                     <p><strong>Crowdfunding app which allows users to make pledges for prototype products.</strong> 
                     I mainly focused on the backend supporting the campaign module. The module displays each product's profile and different price levels of pledges. 
                     Originally the module had 100 entries in Mongo, I decided to generate 300M entries to conduct stress testing with a realistic scenario. 
                     I also switched the database to Postgres as I found the relational schema to be more efficient and appropriate.
+                    Stress testing was conducted by Artillery.io and New Relic. 
                     </p>
                   </div>
               </article>
